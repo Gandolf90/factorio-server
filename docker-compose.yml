@@ -1,0 +1,15 @@
+  factorio:
+   build: .
+   container_name: factorio
+   restart: always
+   ports: 
+     - '8080:80'
+     - '444:443'
+     - '34197:34197/udp'
+   volumes:
+    - /etc/localtime:/etc/localtime:ro
+    - /etc/timezone:/etc/timezone:ro
+    - ./factorio/saves:/opt/factorio/saves
+    - ./factorio/mods:/opt/factorio/mods
+    - ./factorio/config:/opt/factorio/config
+    - ./security:/security
