@@ -9,7 +9,7 @@
    volumes:
     - /etc/localtime:/etc/localtime:ro
     - /etc/timezone:/etc/timezone:ro
-    - ./factorio/saves:/opt/factorio/saves
-    - ./factorio/mods:/opt/factorio/mods
-    - ./factorio/config:/opt/factorio/config
+    - ./saves:/opt/factorio/saves
+    - ./mods:/opt/factorio/mods
+    - ./config:/opt/factorio/config
     - ./security:/security
